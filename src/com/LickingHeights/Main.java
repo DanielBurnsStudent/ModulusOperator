@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 	//testOddness();
-	keepContained();
+	//keepContained();
+	lastDigit();
     }
 
     public static void testOddness() {
@@ -29,6 +30,16 @@ public class Main {
         number = keyboard.nextInt();
 
         System.out.println("Number contained is: " + (number%8+5));
+    }
 
+    public static void lastDigit(){
+        int number;
+        Scanner keyboard;
+        keyboard = new Scanner(System.in);
+
+        System.out.println("Enter a positive integer with 4 digits.");
+        number = keyboard.nextInt();
+
+        System.out.println("The last digit of your number is: " + (number%10));
     }
 }
